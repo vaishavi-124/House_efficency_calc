@@ -1,0 +1,114 @@
+body {
+  font-family: Arial, sans-serif;
+  background-position: center;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Increase width of the container for each appliance item */
+.equipment {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.equipment > div {
+  width: calc(25% - 10px); /* Adjust width to create more space between inputs */
+}
+
+/* Update styles for the remove button */
+.equipment button {
+  width: 20px; /* Adjust width of the remove button */
+  height: 30px; /* Adjust height of the remove button */
+  font-size: 18px; /* Adjust font size of the remove button */
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: #e63946; /* Change color to red */
+  margin-right: 30px;
+}
+
+.equipment button:hover {
+  color: #1e1d1d; /* Darken the color on hover */
+  font-weight: 600;
+}
+
+.calculator {
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 20px;
+  padding: 40px;
+  /* max-width: 550px; */
+  width: 600px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+}
+
+.calculator:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+  color: #009688;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+input, select {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(240, 240, 240, 0.7);
+  color: #333;
+}
+
+button {
+  width: calc(100% - 20px);
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  background-color: #069b89;
+  color: black;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 10px; /* Added margin between buttons */
+}
+
+button:last-child {
+  margin-bottom: 0; /* Remove margin for the last button */
+}
+
+
+
+.result {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgba(240, 240, 240, 0.7);
+  display: block;
+  width: 100%;
+}
+
+.result p {
+  margin-bottom: 10px;
+  color: #333;
+  width: 100%;
+}
+
+.head-anicon {
+  text-align: center; /* Center align the content */
+}
+
+.head-anicon h1 {
+  margin: 0; /* Remove default margin */
+  margin-bottom: 20px;
+}
